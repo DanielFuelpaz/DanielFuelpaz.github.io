@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,8 +11,9 @@
       padding: 20px;
     }
     
-    h1 {
+    h1, h2 {
       color: #333;
+      margin-top: 0;
     }
     
     p {
@@ -21,10 +23,22 @@
     
     ul {
       margin-top: 10px;
+      padding-left: 20px;
     }
     
     li {
       margin-bottom: 5px;
+    }
+    
+    .skills-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .skills-list li::before {
+      content: "▹";
+      color: #333;
+      margin-right: 5px;
     }
   </style>
 </head>
@@ -38,7 +52,7 @@
   <p>I am currently learning about mobile, web, and game development.</p>
   
   <h2>Skills</h2>
-  <ul>
+  <ul class="skills-list">
     <li>DESIGN TOOLS: Adobe Iu, Figma</li>
     <li>DATABASES: MySQL, Oracle</li>
     <li>PROGRAMMING LANGUAGES: Java, Javascript, Python</li>
